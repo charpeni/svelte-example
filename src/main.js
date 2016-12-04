@@ -1,0 +1,1 @@
+import HelloWorld from './js/HelloWorld';
