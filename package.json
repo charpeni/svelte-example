@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
-    "clean:dist": "rimraf dist",
-    "clean": "npm run clean:dist && rimraf node_modules"
+    "build:watch": "npm run build -- -w",
+    "clean": "npm run clean:dist && rimraf node_modules",
+    "clean:dist": "rimraf dist"
   },
   "author": "Nicolas Charpentier",
   "license": "MIT",
   "devDependencies": {
     "rimraf": "^2.5.4",
     "rollup": "^0.36.4",
-    "rollup-plugin-svelte": "^1.0.0"
+    "rollup-plugin-svelte": "^1.0.0",
+    "rollup-watch": "^2.5.0"
   }
 }
