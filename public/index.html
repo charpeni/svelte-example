@@ -2,15 +2,41 @@
 <html>
 <head>
   <title>My first Svelte app</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
+  <style type="text/css">
+    .section {
+      margin-top: 3em;
+    }
+  </style>
 </head>
 <body>
-  <main>
-    <div class="hello-world"></div>
-    <div class="counter"></div>
-    <div class="cat-list"></div>
+  <main class="ui container">
+    <div class="section">
+      <h2 class="ui dividing header">
+        Hello World
+      </h2>
+      <p>Default data and Two-Way binding</p>
+      <div class="hello-world ui raised very padded text container segment"></div>
+    </div>
+    
+    <div class="section">
+      <h2 class="ui dividing header">
+        Counter
+      </h2>
+      <p>Directive with default value & Observer</p>
+      <div class="counter ui raised very padded text container segment"></div>
+    </div>
+
+    <div class="section">
+      <h2 class="ui dividing header">
+        Cat List
+      </h2>
+      <p>Nested components</p>
+      <div class="cat-list ui raised very padded text container segment"></div>
+    </div>
   </main>
-  <script src='../dist/main.js'></script>
-  <script>
-  </script>
+  <script src="../dist/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
 </body>
 </html>
