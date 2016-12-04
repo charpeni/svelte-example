@@ -1,5 +1,6 @@
-import svelte from 'rollup-plugin-svelte';
+import babel from 'rollup-plugin-babel';
 import eslint from 'rollup-plugin-eslint';
+import svelte from 'rollup-plugin-svelte';
 
 export default {
   entry: 'src/main.js',
@@ -10,6 +11,9 @@ export default {
       include: [
         './src/**/*.js',
       ],
+    }),
+    babel({
+      include: ['./src/**/*.js'],
     }),
     svelte({
       // By default, all .html and .svelte files are compiled

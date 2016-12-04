@@ -13,4 +13,6 @@ npm run build
 Rollup will compile everything into `dist` folder, open `public/index.html` into your browser to see Svelte in action.
 
 ## Rollup plugins
+- Eslint
+- Babel
 - Svelte
