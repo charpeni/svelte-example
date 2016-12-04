@@ -5,7 +5,7 @@ import svelte from 'rollup-plugin-svelte';
 export default {
   entry: 'src/main.js',
   dest: 'dist/main.js',
-  format: 'iife',
+  format: 'es',
   plugins: [
     eslint({
       include: [

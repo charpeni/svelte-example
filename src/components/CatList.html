@@ -1,0 +1,19 @@
+<ul>
+  {{#each cats as cat}}
+    <Cat cat='{{ cat }}'></Cat>
+  {{/each}}
+</ul>
+
+<script>
+  import Cat from './Cat.html';
+
+  export default {
+    data () {
+      return {}
+    },
+
+    components: {
+      Cat,
+    },
+  };
+</script>
