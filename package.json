@@ -7,13 +7,20 @@
     "build": "rollup -c",
     "build:watch": "npm run build -- -w",
     "clean": "npm run clean:dist && rimraf node_modules",
-    "clean:dist": "rimraf dist"
+    "clean:dist": "rimraf dist",
+    "lint": "eslint ./src/**"
   },
   "author": "Nicolas Charpentier",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1",
     "rimraf": "^2.5.4",
     "rollup": "^0.36.4",
+    "rollup-plugin-eslint": "^3.0.0",
     "rollup-plugin-svelte": "^1.0.0",
     "rollup-watch": "^2.5.0"
   }
