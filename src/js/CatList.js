@@ -2,25 +2,22 @@ import CatList from '../components/CatList.html';
 
 const CatListComponent = new CatList({
   target: document.querySelector('.cat-list'),
+
   data: {
+    count: 0,
+    newCat: '',
     cats: [
       {
-        name: 'Bella',
+        name: 'Tom',
       },
       {
-        name: 'Tiger',
+        name: 'Oggy',
       },
       {
-        name: 'Chloe',
+        name: 'Sylvester',
       },
       {
-        name: 'Shadow',
-      },
-      {
-        name: 'Luna',
-      },
-      {
-        name: 'Oreo',
+        name: 'Garfield',
       },
     ],
   },
