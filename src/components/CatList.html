@@ -1,19 +1,28 @@
+<input bind:value='newCat' placeholder='Cat name + [ENTER]' on:keydown='addCat(event.keyCode===13)'> <button on:click='addCat()'>Add</button>
 <ul>
   {{#each cats as cat}}
     <Cat cat='{{ cat }}'></Cat>
   {{/each}}
 </ul>
+<p>Count: {{count}}</p>
 
 <script>
-  import Cat from './Cat.html';
+  import Cat from '../components/Cat.html';
 
-  export default {
-    data () {
-      return {}
+  export default {    
+     methods: {
+     
+      addCat(isValid = true) {
+        let model = this.get();
+        if (isValid && model.newCat) {        
+          model.cats.push({'name': model.newCat});
+          this.set({cats: model.cats, count: model.cats.length, newCat: ''});                
+        }
+      },           
     },
-
-    components: {
-      Cat,
-    },
+    
+  components: {
+    Cat,
+  },
   };
 </script>
