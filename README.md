@@ -4,6 +4,8 @@ Some examples to test the [Svelte Framework](https://svelte.technology/).
 
 ## Installation
 
+Node 7 is strongly recommended.
+
 [Yarn](https://yarnpkg.com/) is also available.
 ```
 npm install 
