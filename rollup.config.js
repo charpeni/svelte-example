@@ -3,9 +3,11 @@ import eslint from 'rollup-plugin-eslint';
 import svelte from 'rollup-plugin-svelte';
 
 export default {
-  entry: 'src/main.js',
-  dest: 'dist/main.js',
-  format: 'es',
+  input: 'src/main.js',
+  output: {
+    file: 'dist/main.js',
+    format: 'es',
+  },
   plugins: [
     eslint({
       include: [
