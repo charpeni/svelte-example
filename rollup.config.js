@@ -14,9 +14,6 @@ export default {
         './src/**/*.js',
       ],
     }),
-    babel({
-      include: ['./src/**/*.js'],
-    }),
     svelte({
       // By default, all .html and .svelte files are compiled
       extensions: ['.html'],
@@ -24,6 +21,9 @@ export default {
       // You can restrict which files are compiled
       // using `include` and `exclude`
       include: 'src/components/**.html',
+    }),
+    babel({
+      include: ['./src/**/*.js'],
     }),
   ],
 };
